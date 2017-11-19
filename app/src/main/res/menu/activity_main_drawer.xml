@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/daily_usage"
+            android:title="Daily Usage" />
+        <item
+            android:id="@+id/reminder"
+            android:title="Reminder" />
+    </group>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/settings_nav_bar"
+                android:title="Settings" />
+        </menu>
+    </item>
+
+</menu>

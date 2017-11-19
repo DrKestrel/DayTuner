@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="General">
+
+        <EditTextPreference
+            android:defaultValue="8"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:text="8"
+            android:title="Regular sleep duration"
+            android:id="@+id/sleep_duration_preference"
+            android:key="sleep_duration_preference" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:title="Use percents instead of hours"
+            android:id="@+id/use_percents_preference"
+            android:key="use_percents_preference" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Notifications"
+        android:key="Notifications">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:title="Notify when using apps too much"
+            android:id="@+id/allow_notifications"
+            android:key="allow_notifications" />
+        <EditTextPreference
+            android:defaultValue="30"
+            android:selectAllOnFocus="true"
+            android:singleLine="false"
+            android:text="30"
+            android:title="The amount of time after which the notification should be sent"
+            android:id="@+id/notification_time_preference"
+            android:key="notification_time_preference" />
+    </PreferenceCategory>
+</PreferenceScreen>
